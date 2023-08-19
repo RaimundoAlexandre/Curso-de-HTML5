@@ -1,0 +1,26 @@
+
+body{
+    background-color: rgb(58, 54, 54);
+    font-family: Arial;
+    color: white;
+}
+h1{
+    text-align: center;
+    color: blueviolet;
+    font-family: Arial;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#thumbs{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+#video{
+    text-align: center;
+}
