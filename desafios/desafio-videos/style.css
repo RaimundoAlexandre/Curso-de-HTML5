@@ -23,4 +23,11 @@ a{
 
 #video{
     text-align: center;
+
+}
+
+iframe{
+    width: 1000px;
+    height: 600px;
+
 }
