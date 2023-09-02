@@ -30,6 +30,9 @@ body{
     font-family: var(--fonte-padrao);
     background-color: var(--cor0);
 }
+a.externo::after{
+    content: '\00a0\1F517';
+}
 
 main{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
@@ -46,17 +49,67 @@ main{
 
 main h1{
     font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+    
 }
 main h2{
     font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient( to right, var(--cor1), transparent);
 }
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    font-size: 1em;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+article a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+}
+article h1{
+    color: var(--cor5);
+
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
 main img{
     width: 100%;
 }
 main img.pequena{
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
+}
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 header{
     text-align: center;
@@ -69,6 +122,7 @@ header > h1{
     font-family: var(--fonte-destaque);
     margin-bottom: 20px;
     font-size: 3em;
+    font-weight: normal;
     text-shadow:  2px 2px 0px rgba(0, 0, 0, 0.637);
  
 }
@@ -76,6 +130,7 @@ header > p{
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     max-width: 500px;
+    text-align: center;
     margin: auto;
     padding-right: 10px;
     padding-left: 10px;
@@ -102,8 +157,36 @@ nav > a:hover{
 header nav > ul > li > a{
     font-style: none;
 }
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.280);
+}
+aside h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul{
+    list-style-type: '\2714\00a0\00a0';
+    list-style-position: inside;
+    columns: 2;
+}
 footer{
     background-color: var(--cor5);
     color: white;
     text-align: center;
+    padding: 5px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
 }
